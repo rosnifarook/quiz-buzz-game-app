@@ -1,0 +1,33 @@
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../assets/images/Banana-Login-Signup2.svg");
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+
+.errorContainer h1 {
+  font-size: 68px;
+  color: #dda93a;
+}
+
+.errorContainer h3 {
+  font-size: 38px;
+  color: #dda93a;
+}
+.errorContainer h3 span {
+  font-size: 38px;
+  color: #cc5823;
+}
+
+.errorContainer img {
+  filter: brightness(0.8) contrast(1.5);
+  transition: filter 0.3s ease;
+}
+
+.errorContainer img:hover {
+  filter: brightness(0.9) contrast(1.2); /* Increase brightness by 50% */
+}

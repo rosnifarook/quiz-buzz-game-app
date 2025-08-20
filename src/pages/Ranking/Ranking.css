@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=VT323&display=swap");
+
+::before,
+::after,
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+.container-ranking {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #1a1a1a;
+  background-image: url("../../assets/images/Banana-Login-Signup2.svg");
+  border: 2px solid rgba(255, 255, 255, 0);
+  overflow: hidden;
+}
+.header-back-ranking {
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  margin-top: 40px;
+  margin-left: 50px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  z-index: 100;
+}
+.header-back-ranking:hover {
+  opacity: 1;
+  filter: brightness(1.1);
+  z-index: 100;
+}
+.header-back-ranking Link {
+  z-index: 100;
+}
+.header-back-ranking img {
+  z-index: 100;
+}
+
+.hero-text-ranking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 2px solid wheat; */
+}
+
+.hero-text-ranking p {
+  font-family: ThaleahFat, "VT323", monospace;
+  color: #e1ae3e;
+  font-size: 200px;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  height: 100%;
+  width: 1420px;
+}
+
+table td,
+th {
+  font-family: ThaleahFat, "VT323", monospace;
+  color: #b4892b;
+  font-size: 24px;
+  border: 2px solid #b3872a;
+  padding: 10px;
+  text-align: center;
+  white-space: nowrap;
+  transition: 0.3s ease;
+}
+
+table tbody td {
+  color: #af8e46;
+}
+
+table tr {
+  transition: 0.2s ease;
+}
+
+table tr:hover {
+  color: #bd8f2d;
+  border: 2px solid #b3872a;
+  background-color: #0000007e;
+}
+
+table {
+  transition: 0.3 ease;
+  background-color: #00000056;
+}
+table th {
+  background-color: #0000006b;
+  letter-spacing: 1px;
+}
+table:hover {
+  background-color: #00000050;
+}
+
+.footer-game {
+  position: fixed;
+  display: flex;
+  bottom: 20px;
+  width: 100%; /* Full width of the viewport */
+  padding: 0 52px; /* Optional padding for some spacing on the sides */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-game p {
+  font-family: ThaleahFat, "VT323", monospace;
+  font-size: 28px;
+  color: #5c4e31;
+}

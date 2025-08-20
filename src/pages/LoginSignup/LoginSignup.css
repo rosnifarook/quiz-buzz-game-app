@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=VT323&display=swap");
+
+::before,
+::after,
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1a1a1a;
+  background-image: url("../../assets/images/Banana-Login-Signup2.svg");
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+.header-back {
+  height: fit-content;
+  width: fit-content;
+  margin-top: 40px;
+  margin-bottom: 157px;
+  margin-left: 50px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.header-back:hover {
+  opacity: 1;
+}
+
+.hero-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+}
+
+.hero-text {
+  position: absolute;
+}
+
+.hero-text p {
+  font-family: ThaleahFat, "VT323", monospace;
+  color: #e1ae3e;
+  font-size: 250px;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.banana-line {
+  position: absolute;
+  top: 70px;
+}
+
+/* @keyframes flip {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(-1); 
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.spin {
+  transition: all 0.3s ease-in-out 0s;
+  animation: flip 2s linear infinite;
+} */
+
+.play-button2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 215px;
+}
+
+.play-button2 a {
+  font-family: ThaleahFat, "VT323", monospace;
+  font-size: 48px;
+  text-decoration: none;
+  color: #c99932;
+  text-align: center;
+  width: 1330px;
+  padding: 10px 0px 10px 0px;
+  margin-bottom: 10px;
+  border: 4px solid #a78233;
+  border-radius: 5px;
+  background-color: #a7823325;
+  transition: background-color 0.3s ease;
+}
+.play-button2 button {
+  font-family: ThaleahFat, "VT323", monospace;
+  font-size: 48px;
+  text-decoration: none;
+  color: #c99932;
+  text-align: center;
+  width: 1330px;
+  padding: 10px 0px 10px 0px;
+  margin-bottom: 10px;
+  border: 4px solid #a78233;
+  border-radius: 5px;
+  background-color: #6e3615a8;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* .play-button2 a:last-child {
+  margin-top: 20px;
+} */
+
+.play-button2 a:hover {
+  background-color: #ac883a57;
+  color: #c99a34;
+}
+.play-button2 button:hover {
+  background-color: #973f24c5;
+  color: #c99a34;
+}
+
+.play-btn-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.play-btn-text p {
+  font-family: ThaleahFat, "VT323", monospace;
+  font-size: 48px;
+  color: #c99932;
+}
+
+.footer {
+  position: fixed;
+  display: flex;
+  bottom: 30px;
+  width: 100%; /* Full width of the viewport */
+  padding: 0 43px; /* Optional padding for some spacing on the sides */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  font-family: ThaleahFat, "VT323", monospace;
+  font-size: 28px;
+  color: #5c4e31;
+}

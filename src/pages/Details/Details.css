@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=VT323&display=swap");
+
+::before,
+::after,
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+.container-detail {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1a1a1a;
+  background-image: url("../../assets/images/Banana-Login-Signup2.svg");
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+
+.header-back-info {
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  margin-top: 48px;
+  margin-left: 80px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  z-index: 100;
+}
+.header-back-info:hover {
+  opacity: 1;
+  filter: brightness(1.1);
+  z-index: 100;
+}
+.header-back-info Link {
+  z-index: 100;
+}
+.header-back-info img {
+  z-index: 100;
+}
+
+.github a {
+  position: absolute;
+  top: 9%;
+  left: 30%;
+  scale: 0.3;
+  transition: 0.3s ease;
+  z-index: 100;
+}
+.github a:hover {
+  scale: 0.33;
+  filter: drop-shadow(0px 0px 40px #000000d8);
+}
+
+.github img {
+  transition: 0.3s ease;
+}
+.github img:hover {
+  filter: brightness(1.3);
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.main-header p {
+  font-family: ThaleahFat, "VT323", monospace;
+  color: #e1ae3e;
+  font-size: 100px;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.black-fade-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.black-fade-container:hover {
+  filter: drop-shadow(0px 0px 40px #000000d8);
+}

@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=VT323&display=swap");
+
+::before,
+::after,
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1a1a1a;
+  background-image: url("../../assets/images/Banana-Login-Signup2.svg");
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+.header-back-diff {
+  height: fit-content;
+  width: fit-content;
+  margin-top: 40px;
+  margin-left: 50px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.header-back-diff:hover {
+  opacity: 1;
+}
+
+.mid-section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mid-section p {
+  font-family: ThaleahFat, "VT323", monospace;
+  font-size: 115px;
+  color: #e1ae3e;
+  letter-spacing: 6px;
+}
+
+.diff-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.diff-section button {
+  text-decoration: none;
+  background-color: transparent;
+  border: 0;
+  margin-bottom: 10px;
+  transition: 0.2s ease;
+}
+
+.diff-section button:hover {
+  filter: brightness(1.4);
+  scale: 1.02;
+}
+
+.footer {
+  position: fixed;
+  display: flex;
+  bottom: 30px;
+  width: 100%; /* Full width of the viewport */
+  padding: 0 43px; /* Optional padding for some spacing on the sides */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  font-family: ThaleahFat, "VT323", monospace;
+  font-size: 28px;
+  color: #5c4e31;
+}
