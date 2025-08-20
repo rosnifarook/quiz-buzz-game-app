@@ -273,3 +273,145 @@
   font-size: 28px;
   color: #5c4e31;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container-game {
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+    overflow-x: hidden;
+  }
+  
+  .header-back-game {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .header-back-game img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .spinner {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .spinner img {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+  }
+  
+  .spinner p {
+    margin: 0 auto;
+    font-size: 24px;
+  }
+  
+  .header-game {
+    margin-right: 20px;
+    margin-left: 20px;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .header-game h1 {
+    font-size: 36px;
+  }
+  
+  .header-game p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .bananaAPI {
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  
+  .bananaAPI img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .score-container-main {
+    padding: 20px;
+  }
+  
+  .score-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .left-content {
+    width: 100%;
+  }
+  
+  .right-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .number-input {
+    text-align: center;
+  }
+  
+  .number-input input {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+  
+  .user-input-submit,
+  .user-input-next {
+    width: 100%;
+    max-width: 200px;
+    margin: 10px auto;
+    display: block;
+  }
+  
+  .point-container,
+  .calculation {
+    text-align: center;
+    margin: 15px 0;
+  }
+  
+  .footer-game {
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-game h1 {
+    font-size: 28px;
+  }
+  
+  .header-game p {
+    font-size: 18px;
+  }
+  
+  .spinner img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .spinner p {
+    font-size: 20px;
+  }
+  
+  .number-input input {
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  .user-input-submit,
+  .user-input-next {
+    font-size: 16px;
+    padding: 15px;
+  }
+}

@@ -8,3 +8,51 @@
   margin: 0%;
   font-family: ThaleahFat, "VT323", monospace;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  * {
+    font-size: 14px;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  .container {
+    padding: 10px;
+    min-height: 100vh;
+  }
+  
+  input, button {
+    font-size: 16px !important; /* Prevents zoom on iOS */
+    padding: 12px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  * {
+    font-size: 12px;
+  }
+  
+  .container {
+    padding: 5px;
+  }
+  
+  h1 {
+    font-size: 24px !important;
+  }
+  
+  h2 {
+    font-size: 20px !important;
+  }
+  
+  p {
+    font-size: 14px !important;
+  }
+}

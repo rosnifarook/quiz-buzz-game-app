@@ -177,3 +177,98 @@
   font-size: 28px;
   color: #5c4e31;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+  }
+  
+  .header-icon {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .hero-section {
+    margin-top: 80px;
+  }
+  
+  .hero-text p {
+    font-size: 120px;
+    text-align: center;
+  }
+  
+  .banana-line {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .banana-line img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .play-button {
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .play-button a {
+    font-size: 24px;
+    padding: 15px 30px;
+  }
+  
+  .old-user-container {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .user-name {
+    font-size: 24px;
+  }
+  
+  .logout {
+    font-size: 24px;
+  }
+  
+  .audio-btn {
+    bottom: 30px;
+    right: 20px;
+  }
+  
+  .audio-btn-home img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text p {
+    font-size: 80px;
+  }
+  
+  .play-button a {
+    font-size: 20px;
+    padding: 12px 24px;
+  }
+  
+  .user-name {
+    font-size: 20px;
+  }
+  
+  .logout {
+    font-size: 20px;
+  }
+  
+  .banana-line img {
+    width: 30px;
+    height: 30px;
+  }
+}
