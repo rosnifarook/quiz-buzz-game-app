@@ -31,3 +31,92 @@
 .errorContainer img:hover {
   filter: brightness(0.9) contrast(1.2); /* Increase brightness by 50% */
 }
+
+.footer {
+  position: fixed;
+  display: flex;
+  bottom: 30px;
+  width: 100%;
+  padding: 0 43px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  font-family: ThaleahFat, "VT323", monospace;
+  font-size: 28px;
+  color: #5c4e31;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .errorContainer {
+    padding: 20px 20px 70px 20px; /* Added bottom padding for footer */
+    text-align: center;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+  
+  .errorContainer h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .errorContainer h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .errorContainer h3 span {
+    font-size: 24px;
+  }
+  
+  .errorContainer img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    background-color: rgba(26, 26, 26, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+  }
+  
+  .footer p {
+    font-size: 12px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .errorContainer {
+    padding: 15px 15px 60px 15px;
+  }
+  
+  .errorContainer h1 {
+    font-size: 36px;
+  }
+  
+  .errorContainer h3,
+  .errorContainer h3 span {
+    font-size: 20px;
+  }
+  
+  .footer {
+    bottom: 5px;
+    padding: 0 10px;
+  }
+  
+  .footer p {
+    font-size: 10px;
+  }
+}

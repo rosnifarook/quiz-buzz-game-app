@@ -17,6 +17,7 @@
   border: 2px solid rgba(255, 255, 255, 0);
   overflow: hidden;
 }
+
 .header-back-game {
   position: absolute;
   height: fit-content;
@@ -27,14 +28,17 @@
   transition: opacity 0.3s ease;
   z-index: 100;
 }
+
 .header-back-game:hover {
   opacity: 1;
   filter: brightness(1.1);
   z-index: 100;
 }
+
 .header-back-game Link {
   z-index: 100;
 }
+
 .header-back-game img {
   z-index: 100;
 }
@@ -56,6 +60,7 @@
   margin-right: 250px;
   opacity: 0.5;
 }
+
 .spinner p {
   margin-left: 328px;
   margin-right: 250px;
@@ -121,10 +126,11 @@
 }
 
 .hr hr {
-  width: 1518px;
-  border: none; /* Remove any default border */
-  border-bottom: 4px solid #ca9c38; /* Add custom bottom border */
-  height: 0; /* Set height to 0 to avoid extra height */
+  width: 100%;
+  max-width: 1518px;
+  border: none;
+  border-bottom: 4px solid #ca9c38;
+  height: 0;
   margin-top: 10px;
 }
 
@@ -134,12 +140,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 10;
 }
 
 .score-container {
-  /* border: 4px solid #976b31; */
-  width: 1518px;
+  width: 100%;
+  max-width: 1518px;
   height: 400px;
   padding-left: 50px;
   padding-right: 50px;
@@ -159,9 +165,8 @@
   font-size: 40px;
   color: #c59732;
   margin-left: 10px;
-  border: 4px solid #a57a1e9a; /* Remove all borders */
-  /* border-bottom: 4px solid #a57a1e9a; */
-  border-radius: 5px 5px 5px 5px; /* Remove any rounding */
+  border: 4px solid #a57a1e9a;
+  border-radius: 5px 5px 5px 5px;
   margin-bottom: 20px;
   background-color: #c59b4015;
   text-align: center;
@@ -171,7 +176,7 @@
 }
 
 .number-input input:focus {
-  outline: none; /* Removes the outline */
+  outline: none;
   border: 4px solid #a57a1e;
   background-color: #d1a44415;
 }
@@ -193,6 +198,7 @@
   margin-left: 10px;
   transition: filter 0.2s ease;
 }
+
 .user-input-submit:hover {
   filter: brightness(1.2);
   scale: 1.03;
@@ -210,7 +216,14 @@
   color: #a57a1e;
   margin-left: 10px;
   transition: filter 0.2s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .user-input-next:hover {
   filter: brightness(1.2);
   scale: 1.03;
@@ -234,6 +247,16 @@
   border: 0;
   scale: 1;
   transition: filter 0.3s ease;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.rankbtn img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  display: block;
 }
 
 .rankbtn:hover {
@@ -253,6 +276,7 @@
 .point-container {
   display: flex;
 }
+
 .point-container .points {
   margin-left: 20px;
   color: #bdbdbd;
@@ -262,8 +286,8 @@
   position: fixed;
   display: flex;
   bottom: 10px;
-  width: 100%; /* Full width of the viewport */
-  padding: 0 43px; /* Optional padding for some spacing on the sides */
+  width: 100%;
+  padding: 0 43px;
   justify-content: space-between;
   align-items: center;
 }
@@ -280,138 +304,413 @@
     height: 100vh;
     width: 100vw;
     padding: 10px;
+    overflow-y: auto;
     overflow-x: hidden;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
   }
   
   .header-back-game {
-    margin-top: 20px;
-    margin-left: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    margin: 0;
   }
   
   .header-back-game img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
   
   .spinner {
-    flex-direction: column;
-    gap: 20px;
+    display: none;
   }
   
-  .spinner img {
-    width: 100px;
-    height: 100px;
-    margin: 20px auto;
-  }
-  
-  .spinner p {
-    margin: 0 auto;
-    font-size: 24px;
+  .game {
+    margin-top: 50px;
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    position: static;
+    flex: 1;
   }
   
   .header-game {
-    margin-right: 20px;
-    margin-left: 20px;
-    flex-direction: column;
-    gap: 15px;
     text-align: center;
+    margin: 0 0 20px 0;
+    padding: 15px;
+    border-bottom: 2px solid #ca9c38;
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .header-game h1 {
-    font-size: 36px;
+    font-size: 24px;
+    margin: 0 0 10px 0;
   }
   
   .header-game p {
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 16px;
+    margin: 0;
   }
   
   .bananaAPI {
-    margin-top: 20px;
-    padding: 0 20px;
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
-  .bananaAPI img {
+  .bananaAPI .timer {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .bananaAPI .answer {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .hr hr {
+    width: 100%;
     max-width: 100%;
-    height: auto;
+    margin: 15px 0;
   }
   
   .score-container-main {
-    padding: 20px;
+    width: 100%;
+    padding: 10px;
+    position: static;
   }
   
   .score-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 300px;
+    padding: 20px;
+    display: flex;
     flex-direction: column;
     gap: 20px;
+    position: static;
   }
   
   .left-content {
     width: 100%;
+    text-align: center;
+    position: static;
+    margin: 0;
+    order: 1;
   }
   
-  .right-content {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  .left-content p {
+    font-size: 18px;
+    margin-bottom: 15px;
   }
   
   .number-input {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+    flex-wrap: wrap;
   }
   
   .number-input input {
-    width: 100%;
-    max-width: 300px;
-    margin: 10px auto;
+    width: 60px;
+    height: 40px;
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #a57a1e;
+    border-radius: 5px;
+    background-color: #c59b4015;
+    margin: 0;
   }
   
   .user-input-submit,
   .user-input-next {
+    width: 80px;
+    height: 40px;
+    padding: 5px;
+    font-size: 14px;
+    border: 2px solid #a57a1e;
+    border-radius: 5px;
+    background-color: #a57a1e12;
+    color: #a57a1e;
+    cursor: pointer;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .right-content {
     width: 100%;
-    max-width: 200px;
-    margin: 10px auto;
+    text-align: center;
+    margin: 20px 0;
+    position: static;
+    right: auto;
+    order: 2;
+  }
+  
+  .rankbtn {
+    width: 250px;
+    height: 60px;
+    margin: 0 auto;
     display: block;
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #a57a1e;
+    border-radius: 5px;
+    background-color: #a57a1e12;
+    color: #a57a1e;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .rankbtn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: none;
   }
   
   .point-container,
   .calculation {
     text-align: center;
-    margin: 15px 0;
+    font-size: 14px;
+    margin: 10px 0;
+    justify-content: center;
+  }
+  
+  .point-container .points,
+  .calculation .time {
+    margin: 0 0 0 10px;
   }
   
   .footer-game {
-    position: relative;
-    margin-top: 30px;
-    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  
+  .footer-game p {
+    font-size: 12px;
+    margin: 0;
   }
 }
 
 @media (max-width: 480px) {
+  .container-game {
+    padding: 5px;
+  }
+  
+  .header-back-game {
+    top: 5px;
+    left: 5px;
+  }
+  
+  .header-back-game img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .game {
+    margin-top: 40px;
+    padding: 5px;
+  }
+  
+  .header-game {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
   .header-game h1 {
-    font-size: 28px;
-  }
-  
-  .header-game p {
-    font-size: 18px;
-  }
-  
-  .spinner img {
-    width: 80px;
-    height: 80px;
-  }
-  
-  .spinner p {
     font-size: 20px;
   }
   
-  .number-input input {
-    font-size: 16px;
+  .header-game p {
+    font-size: 14px;
+  }
+  
+  .bananaAPI {
+    margin: 15px 0;
+    padding: 10px;
+  }
+  
+  .bananaAPI .timer {
+    font-size: 18px;
+  }
+  
+  .bananaAPI .answer {
+    font-size: 14px;
+  }
+  
+  .score-container {
     padding: 15px;
+    gap: 15px;
+  }
+  
+  .left-content p {
+    font-size: 16px;
+  }
+  
+  .number-input {
+    gap: 8px;
+    margin: 10px 0;
+  }
+  
+  .number-input input {
+    width: 50px;
+    height: 35px;
+    font-size: 16px;
   }
   
   .user-input-submit,
   .user-input-next {
+    width: 70px;
+    height: 35px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rankbtn {
+    width: 230px;
+    height: 55px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .rankbtn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .point-container,
+  .calculation {
+    font-size: 12px;
+  }
+  
+  .footer-game {
+    bottom: 5px;
+    padding: 0 10px;
+  }
+  
+  .footer-game p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container-game {
+    padding: 3px;
+  }
+  
+  .header-back-game img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .game {
+    margin-top: 35px;
+  }
+  
+  .header-game h1 {
+    font-size: 18px;
+  }
+  
+  .header-game p {
+    font-size: 12px;
+  }
+  
+  .bananaAPI .timer {
     font-size: 16px;
-    padding: 15px;
+  }
+  
+  .bananaAPI .answer {
+    font-size: 12px;
+  }
+  
+  .score-container {
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .left-content p {
+    font-size: 14px;
+  }
+  
+  .number-input input {
+    width: 45px;
+    height: 30px;
+    font-size: 14px;
+  }
+  
+  .user-input-submit,
+  .user-input-next {
+    width: 60px;
+    height: 30px;
+    font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rankbtn {
+    width: 200px;
+    height: 50px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .rankbtn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .point-container,
+  .calculation {
+    font-size: 10px;
+  }
+  
+  .footer-game p {
+    font-size: 8px;
   }
 }

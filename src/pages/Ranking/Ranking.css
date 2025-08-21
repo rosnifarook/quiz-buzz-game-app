@@ -118,3 +118,132 @@ table:hover {
   font-size: 28px;
   color: #5c4e31;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container-ranking {
+    padding: 20px 20px 70px 20px; /* Added bottom padding for footer */
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+  
+  .header-back-ranking {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+    margin: 0;
+  }
+  
+  .header-back-ranking img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .hero-text-ranking {
+    margin-top: 60px;
+    padding: 0 20px;
+  }
+  
+  .hero-text-ranking p {
+    font-size: 80px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  table {
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px;
+    margin: 20px 0;
+    border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+  }
+  
+  table thead,
+  table tbody {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  table td,
+  table th {
+    font-size: 12px;
+    padding: 8px 4px;
+    border: 1px solid #b3872a;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Adjust column widths for mobile */
+  table th:nth-child(1),
+  table td:nth-child(1) {
+    width: 15%; /* Rank column */
+  }
+  
+  table th:nth-child(2),
+  table td:nth-child(2) {
+    width: 25%; /* Username column */
+  }
+  
+  table th:nth-child(3),
+  table td:nth-child(3) {
+    width: 20%; /* Points column */
+  }
+  
+  table th:nth-child(4),
+  table td:nth-child(4) {
+    width: 40%; /* Last Match Date column */
+  }
+  
+  .footer-game {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    background-color: rgba(26, 26, 26, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Blur effect for better readability */
+    z-index: 1000; /* Ensure footer stays on top */
+  }
+  
+  .footer-game p {
+    font-size: 12px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-ranking {
+    padding: 15px 15px 60px 15px; /* Adjusted bottom padding for smaller screens */
+  }
+  
+  .hero-text-ranking p {
+    font-size: 60px;
+  }
+  
+  table td,
+  table th {
+    font-size: 10px;
+    padding: 6px 2px;
+  }
+  
+  .footer-game {
+    bottom: 5px;
+    padding: 0 10px;
+  }
+  
+  .footer-game p {
+    font-size: 10px;
+  }
+}

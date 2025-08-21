@@ -164,7 +164,7 @@ export const Home = () => {
         </div>
         <div className="footer">
           <p>V1.0</p>
-          <p>made by: Rosni Farook</p>
+          <p>made by: rosni farook</p>
         </div>
 
         {/* <p>Copyright © 2022 BANANA RUSH. All rights reserved.</p> */}
